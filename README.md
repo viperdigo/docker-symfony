@@ -99,14 +99,14 @@ We have the following *docker-compose* built images:
 Running `docker-compose ps` should result in the following running containers:
 
 ```
-           Name                          Command               State              Ports
---------------------------------------------------------------------------------------------------
-container_mysql         /entrypoint.sh mysqld            Up      0.0.0.0:3306->3306/tcp
-container_nginx         nginx                            Up      443/tcp, 0.0.0.0:80->80/tcp
-container_phpfpm        php-fpm                          Up      0.0.0.0:9000->9000/tcp
-container_redis         docker-entrypoint.sh redis ...   Up      6379/tcp
-container_rabbit        rabbitmq:3-management            Up      4369/tcp, 5671/tcp, 0.0.0.0:5672->5672/tcp, 15671/tcp, 25672/tcp, 0.0.0.0:15672->15672
-container_elk           /usr/bin/supervisord -n -c ...   Up      0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp
+      Name                    Command               State                                             Ports
+------------------------------------------------------------------------------------------------------------------------------------------------------
+container_elk      /usr/local/bin/start.sh          Up      0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp
+container_mysql    docker-entrypoint.sh mysqld      Up      0.0.0.0:3306->3306/tcp, 33060/tcp
+container_nginx    nginx                            Up      443/tcp, 0.0.0.0:80->80/tcp
+container_php      docker-php-entrypoint php-fpm    Up      9000/tcp
+container_rabbit   docker-entrypoint.sh rabbi ...   Up      15671/tcp, 0.0.0.0:15672->15672/tcp, 25672/tcp, 4369/tcp, 5671/tcp, 0.0.0.0:5672->5672/tcp
+container_redis    docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp
 ```
 
 ## Usage
