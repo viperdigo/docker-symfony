@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/viperdigo/docker-symfony.svg?branch=symfony4&style=flat-square)](https://travis-ci.org/viperdigo/docker-symfony)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 [![contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/viperdigo/docker-symfony/issues)
-[![HitCount](http://hits.dwyl.com/carlosas/docker-for-symfony.svg)](http://hits.dwyl.com/carlosas/docker-for-symfony)
+[![HitCount](http://hits.dwyl.io/viperdigo/docker-symfony.svg)](http://hits.dwyl.io/viperdigo/docker-symfony)
 
 ![](doc/schema.png)
 
