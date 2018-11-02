@@ -9,6 +9,11 @@
 
 ![](doc/schema.png)
 
+## Project Based in 
+([docker-for-symfony](https://github.com/carlosas/docker-for-symfony/tree/symfony-4)):
+
+The idea of this project is to follow this project but for symfony2, symfony3 and symfony4 and laravel 5+
+
 ## Basic info
 
 * [nginx](https://nginx.org/)
