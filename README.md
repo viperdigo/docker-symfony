@@ -57,7 +57,7 @@ This stack needs [docker](https://www.docker.com/) and [docker-compose](https://
 
     ```sh
     # OSX/Linux
-    $ vi /etc/hosts
+    $ sudo vi /etc/hosts
     # Windows
     edit with adm permission the file 'c:\Windows\System32\Drivers\etc\hosts'
 
