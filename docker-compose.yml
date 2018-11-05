@@ -9,7 +9,7 @@ services:
     php:
         container_name: container_php
         build:
-            context: php7-fpm
+            context: php5-fpm
             args:
                 TIMEZONE: ${TIMEZONE}
         volumes:
