@@ -22,6 +22,7 @@ RUN pecl install xdebug-2.5.5
 RUN pecl install memcache
 RUN pecl install memcached-2.2.0 
 RUN docker-php-ext-enable xdebug
+RUN echo "memory_limit=-1" > /usr/local/etc/php/conf.d/memory-limit.ini
 RUN echo "extension=memcache.so" >> /usr/local/etc/php/conf.d/memcache.ini
 RUN echo "extension=memcached.so" >> /usr/local/etc/php/conf.d/memcached.ini 
 RUN echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
